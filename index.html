@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Product Store</h1>
+        <div class="filters">
+            <input id="search" type="search" placeholder="Mahsulot qidirish">
+
+            <select name="category" id="category">
+                <option value="">Barcha kategoriyalar</option>
+            </select>
+            <select name="sort" id="sort">
+                <option value="price-asc">Narx: o'sish tartibida</option>
+                <option value="price-desc">Narx: kamayish tartibida</option>
+            </select>
+        </div>
+    </nav>
+    <main>
+        <p class="message">Mahsulotlar yuklanmoqda...</p>
+        <section id="products" class="products"></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
